@@ -157,12 +157,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btn_init_dev:
                 int init = mIR6Manager.InitDevice();
-                etShow.append(init +"上电\n");
+                etShow.append("上电:"+init +"\n");
                 getLast();
                 break;
             case R.id.btn_release_dev:
                 mIR6Manager.ReleaseDevice();
-                etShow.append("下电\n");
+                etShow.append("已下电\n");
                 getLast();
                 break;
             case R.id.btn_search_card:
@@ -185,7 +185,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             case R.id.btn_deselect://将卡片移除有效范围
                 int outCard = mIR6Manager.Deselect();
-                etShow.append(outCard +"\n");
+                etShow.append("移除卡片："+outCard+"\n");
                 getLast();
                 break;
 
