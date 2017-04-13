@@ -248,7 +248,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     {
                         res += String.format("%02x ", i);
                     }
-                    etShow.append(res);
+                    etShow.append(res + "\n");
                     getLast();
                     tvTitle.setText("execute cmd ok");
                 }
